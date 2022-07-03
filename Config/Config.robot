@@ -112,9 +112,9 @@ Generate Country
 
 Special Characters
     [Documentation]    You should define how many special characters you want by informing the lenght.
-    [Arguments]    ${lenght}
+    [Arguments]    ${length}
     ${special_character}    FakerLibrary.Password
-    ...    lenght=${lenght}
+    ...    length=${length}
     ...    special_chars=True
     ...    digits=False
     ...    upper_case=False

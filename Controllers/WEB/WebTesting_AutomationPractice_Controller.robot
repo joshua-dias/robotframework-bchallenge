@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Config/Config.robot
+Resource    ../../Config/Config.robot
 
 *** Variables ***
 ${URL_AutomationPractice}       http://automationpractice.com/
@@ -32,6 +32,7 @@ ${input_mobilephone}            id=phone_mobile
 ${input_addressalias}           id=alias
 
 ${button_submit}                id=submitAccount
+${firstname_error}              xpath=//li[contains(.,'firstname is invalid.')]
 
 ### MY ACCOUNT PAGE 
 ${page_Heading_MyAccount}       xpath=//h1[@class='page-heading'][contains(.,'My account')]
@@ -74,11 +75,13 @@ I submit registration form with first name containing only special characters
     I submit registration form
 
 ### THEN
-the registration must not succeed
+the registration must not succeed with an invalid message
+    Wait Until Page Contains Element 
+    ...     ${firstname_error}
+    ...     error=Locator ${firstname_error} not found.
+    Log To Console    -----REGISTRATION DID NOT HAPPEN - FIRST NAME IS INVALID
 the registration must succeed
     Wait Until Page Contains Element   
     ...     ${page_Heading_MyAccount}
     ...     error=Locator ${page_Heading_MyAccount} not found.
     Log To Console    -----SUCCESFULL REGISTRATION
-
-shows a First Name invalid message
