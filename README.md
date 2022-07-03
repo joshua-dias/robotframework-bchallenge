@@ -36,3 +36,6 @@ O projeto está dividido em pastas cujo propósitos são definidos:
 3. Sempre executar o comando git pull antes de iniciar as alterações; 
 4. Cada arquivo de teste deve ter seu próprio controller; 
 
+#🤖Observações
+1. Versão Chrome acima de 103 está com problema pra rodar o código non-headless, caso esteja enfrentando esse problema e não consiga realizar downgrade da versão, basta alterar o argumento da váriavel ${CHROME} disponível em Config\Config.robot para headless. 
+

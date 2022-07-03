@@ -5,10 +5,10 @@ Library         FakerLibrary        locale=en_US
 Library    String
 
 ### RESOURCES
-Resource    ../Controllers/WebTesting_AutomationPractice_Controller.robot
+Resource    ../Controllers/WEB/WebTesting_AutomationPractice_Controller.robot
 
 *** Variables ***
-${BROWSER}      headlesschrome      #chrome        #headlesschrome
+${BROWSER}      chrome      #chrome        #headlesschrome
 
 *** Keywords ***
 ### MAIN KEYWORDS
@@ -78,7 +78,7 @@ Generate Password
     Log To Console          PASSWORD: ${client_Password} 
 
 Generate Address
-    ${client_Address}       FakerLibrary.Address
+    ${client_Address}       FakerLibrary.Street Address
     Set Test Variable       ${client_Address}
     Log To Console          ADDRESS: ${client_Address}
 
