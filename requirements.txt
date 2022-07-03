@@ -1,0 +1,6 @@
+robotframework
+robotframework-seleniumlibrary
+robotframework-screencaplibrary
+robotframework-requests
+robotframework-faker
+webdriver-manager
