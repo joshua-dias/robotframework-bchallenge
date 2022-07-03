@@ -73,8 +73,8 @@ Generate Email
     Log To Console          EMAIL: ${client_Email} 
 
 Generate Password
-    ${client_Password}      FakerLibrary.Password
-    Set Test Variable       ${client_Password} 
+    Numerical Characters    10
+    Set Test Variable       ${client_Password}      ${numerical_character}
     Log To Console          PASSWORD: ${client_Password} 
 
 Generate Address
@@ -83,13 +83,12 @@ Generate Address
     Log To Console          ADDRESS: ${client_Address}
 
 Generate Phone
-    ${client_PhoneNumber_WithPlusNumbers}  FakerLibrary.Phone Number
-    ${client_PhoneNumber}    Get Substring    ${client_PhoneNumber_WithPlusNumbers}    -6
+    ${client_PhoneNumber}   Random Int    2000000000    9999999999    1
     Set Test Variable       ${client_PhoneNumber}
     Log To Console          PHONE NUMBER: ${client_PhoneNumber}
 
 Generate Address Alias  
-    Set Test Variable       ${client_AddressAlias}       "${client_FirstName} House"
+    Set Test Variable       ${client_AddressAlias}       "${client_FirstName}'s House"
     Log To Console          ADDRESS ALIAS: ${client_AddressAlias}
 
 Generate City

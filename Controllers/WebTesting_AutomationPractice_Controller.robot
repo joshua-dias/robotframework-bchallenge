@@ -20,6 +20,7 @@ ${input_title}                  id=id_gender1
 ${input_firstname}              id=customer_firstname
 ${input_lastname}               id=customer_lastname
 ${input_email}                  id=email    
+${input_password}               xpath=//input[contains(@type,'password')]
 ${input_address_firstname}      id=firstname
 ${input_address_lastname}       id=lastname
 ${input_address}                id=address1
@@ -31,6 +32,9 @@ ${input_mobilephone}            id=phone_mobile
 ${input_addressalias}           id=alias
 
 ${button_submit}                id=submitAccount
+
+### MY ACCOUNT PAGE 
+${page_Heading_MyAccount}       xpath=//h1[@class='page-heading'][contains(.,'My account')]
 
 *** Keywords ***
 ### GIVEN
@@ -47,19 +51,20 @@ a user doesn't have an account in Automation Practice
 I submit registration form
     Wait Until Page Contains Element    ${page_Heading_CreateAccount}
     Fills title
-    Fills field    ${input_firstname}                ${client_FirstName}
-    Fills field    ${input_lastname}                 ${client_LastName}
-    Fills field    ${input_email}                    ${client_Email} 
-    Fills field    ${input_address_firstname}        ${client_FirstName}
-    Fills field    ${input_address_lastname}         ${client_LastName}
-    Fills field    ${input_address}                  ${client_Address}
-    Fills field    ${input_city}                     ${client_City}             
+    Fills field        ${input_firstname}                ${client_FirstName}
+    Fills field        ${input_lastname}                 ${client_LastName}
+    Fills field        ${input_email}                    ${client_Email} 
+    Fills field        ${input_password}                 ${client_Password}
+    Fills field        ${input_address_firstname}        ${client_FirstName}
+    Fills field        ${input_address_lastname}         ${client_LastName}
+    Fills field        ${input_address}                  ${client_Address}
+    Fills field        ${input_city}                     ${client_City}             
     Select From List By Label    ${select_state}     ${client_State}          
-    Fills field    ${input_zipcode}       ${client_postalcode}               
+    Fills field        ${input_zipcode}       ${client_postalcode}               
     Select From List By Label    ${select_country}   ${client_Country}
-    Fills field    ${input_mobilephone}              ${client_PhoneNumber}
-    Fills field    ${input_addressalias}             ${client_AddressAlias}
-    Click Element  ${button_submit}
+    Fills field        ${input_mobilephone}              ${client_PhoneNumber}
+    Fills field        ${input_addressalias}             ${client_AddressAlias}
+    Click Element      ${button_submit}
     
 I submit registration form with first name containing only special characters
     Special Characters    3 
@@ -71,4 +76,9 @@ I submit registration form with first name containing only special characters
 ### THEN
 the registration must not succeed
 the registration must succeed
+    Wait Until Page Contains Element   
+    ...     ${page_Heading_MyAccount}
+    ...     error=Locator ${page_Heading_MyAccount} not found.
+    Log To Console    -----SUCCESFULL REGISTRATION
+
 shows a First Name invalid message
