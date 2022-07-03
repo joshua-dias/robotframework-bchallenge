@@ -1,3 +1,7 @@
 .vs
 .vscode
 *.png
+*.html
+*.xml
+*.pyc
+*.log

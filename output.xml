@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.9 on win32)" generated="20220703 11:07:29.325" rpa="false" schemaversion="2">
-<suite id="s1" name="WebTesting AutomationPractice" source="c:\Users\joshu\Documents\robot-challenge\Tests\WEB\WebTesting_AutomationPractice.robot">
+<robot generator="Robot 4.1.3 (Python 3.9.9 on win32)" generated="20220703 11:24:24.765" rpa="false" schemaversion="2">
+<suite id="s1" name="Webtesting Automationpractice" source="c:\Users\joshu\Documents\robot-challenge\tests\web\webtesting_automationpractice.robot">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
 <arg>Update ChromeDriver</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
@@ -8,23 +8,23 @@
 <doc>This keyword was created so it's not needed to care about updating the chromedriver, webdriver-manager library does that itself.</doc>
 <kw name="Get Chromedriver Path" library="SeleniumLibrary">
 <var>${chromedriver_path}</var>
-<msg timestamp="20220703 11:07:29.951" level="INFO">====== WebDriver manager ======</msg>
-<msg timestamp="20220703 11:07:30.383" level="INFO">Current google-chrome version is 103.0.5060</msg>
-<msg timestamp="20220703 11:07:30.383" level="INFO">Get LATEST chromedriver version for 103.0.5060 google-chrome</msg>
-<msg timestamp="20220703 11:07:30.519" level="INFO">Driver [C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe] found in cache</msg>
-<msg timestamp="20220703 11:07:30.520" level="INFO">C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe</msg>
-<msg timestamp="20220703 11:07:30.520" level="INFO">${chromedriver_path} = C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe</msg>
-<status status="PASS" starttime="20220703 11:07:29.951" endtime="20220703 11:07:30.520"/>
+<msg timestamp="20220703 11:24:25.327" level="INFO">====== WebDriver manager ======</msg>
+<msg timestamp="20220703 11:24:25.753" level="INFO">Current google-chrome version is 103.0.5060</msg>
+<msg timestamp="20220703 11:24:25.753" level="INFO">Get LATEST chromedriver version for 103.0.5060 google-chrome</msg>
+<msg timestamp="20220703 11:24:25.913" level="INFO">Driver [C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe] found in cache</msg>
+<msg timestamp="20220703 11:24:25.913" level="INFO">C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe</msg>
+<msg timestamp="20220703 11:24:25.914" level="INFO">${chromedriver_path} = C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe</msg>
+<status status="PASS" starttime="20220703 11:24:25.327" endtime="20220703 11:24:25.914"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${chromedriver_path}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20220703 11:07:30.520" level="INFO">${chromedriver_path} = C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe</msg>
-<status status="PASS" starttime="20220703 11:07:30.520" endtime="20220703 11:07:30.520"/>
+<msg timestamp="20220703 11:24:25.914" level="INFO">${chromedriver_path} = C:\Users\joshu\.wdm\drivers\chromedriver\win32\103.0.5060.53\chromedriver.exe</msg>
+<status status="PASS" starttime="20220703 11:24:25.914" endtime="20220703 11:24:25.915"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:29.951" endtime="20220703 11:07:30.521"/>
+<status status="PASS" starttime="20220703 11:24:25.326" endtime="20220703 11:24:25.915"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:29.950" endtime="20220703 11:07:30.521"/>
+<status status="PASS" starttime="20220703 11:24:25.326" endtime="20220703 11:24:25.915"/>
 </kw>
 <test id="s1-t1" name="Scenario 01: Registration must complete - Natural Person">
 <kw name="Run Keywords" library="BuiltIn" type="SETUP">
@@ -37,80 +37,80 @@
 <arg>executable_path=${chromedriver_path}</arg>
 <arg>options=add_argument("--incognito"); add_argument("--ignore-certificate-errors"); add_argument("--start-maximized"); add_argument("--disable-popup-blocking"); add_argument("--disable-notifications"); add_argument("--disable-extensions"); add_argument("--disable-web-security"); add_argument("--window-size=1920,1080")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220703 11:07:30.523" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
-<status status="PASS" starttime="20220703 11:07:30.522" endtime="20220703 11:07:37.088"/>
+<msg timestamp="20220703 11:24:25.918" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20220703 11:24:25.917" endtime="20220703 11:24:32.109"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220703 11:07:37.088" endtime="20220703 11:07:37.202"/>
+<status status="PASS" starttime="20220703 11:24:32.110" endtime="20220703 11:24:32.221"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:30.522" endtime="20220703 11:07:37.202"/>
+<status status="PASS" starttime="20220703 11:24:25.917" endtime="20220703 11:24:32.221"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:30.522" endtime="20220703 11:07:37.202"/>
+<status status="PASS" starttime="20220703 11:24:25.916" endtime="20220703 11:24:32.221"/>
 </kw>
 <kw name="Given a user doesn't have an account in Automation Practice" library="WebTesting_AutomationPractice_Controller">
 <kw name="Generate Data for Registration" library="Config">
 <kw name="Log To Console" library="BuiltIn">
 <arg>----- GENERATING DATA FOR REGISTRATION FORM</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.203" endtime="20220703 11:07:37.203"/>
+<status status="PASS" starttime="20220703 11:24:32.223" endtime="20220703 11:24:32.223"/>
 </kw>
 <kw name="Generate First Name" library="Config">
 <kw name="First Name" library="FakerLibrary">
 <var>${client_FirstName}</var>
-<msg timestamp="20220703 11:07:37.204" level="INFO">${client_FirstName} = Lisa</msg>
-<status status="PASS" starttime="20220703 11:07:37.204" endtime="20220703 11:07:37.205"/>
+<msg timestamp="20220703 11:24:32.224" level="INFO">${client_FirstName} = Monica</msg>
+<status status="PASS" starttime="20220703 11:24:32.224" endtime="20220703 11:24:32.224"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_FirstName}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.205" level="INFO">${client_FirstName} = Lisa</msg>
-<status status="PASS" starttime="20220703 11:07:37.205" endtime="20220703 11:07:37.205"/>
+<msg timestamp="20220703 11:24:32.225" level="INFO">${client_FirstName} = Monica</msg>
+<status status="PASS" starttime="20220703 11:24:32.224" endtime="20220703 11:24:32.225"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>FIRST NAME: ${client_FirstName}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.205" endtime="20220703 11:07:37.206"/>
+<status status="PASS" starttime="20220703 11:24:32.225" endtime="20220703 11:24:32.225"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.204" endtime="20220703 11:07:37.206"/>
+<status status="PASS" starttime="20220703 11:24:32.223" endtime="20220703 11:24:32.226"/>
 </kw>
 <kw name="Generate Last Name" library="Config">
 <kw name="Last Name" library="FakerLibrary">
 <var>${client_LastName}</var>
-<msg timestamp="20220703 11:07:37.207" level="INFO">${client_LastName} = Garcia</msg>
-<status status="PASS" starttime="20220703 11:07:37.207" endtime="20220703 11:07:37.207"/>
+<msg timestamp="20220703 11:24:32.226" level="INFO">${client_LastName} = Moore</msg>
+<status status="PASS" starttime="20220703 11:24:32.226" endtime="20220703 11:24:32.226"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_LastName}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.207" level="INFO">${client_LastName} = Garcia</msg>
-<status status="PASS" starttime="20220703 11:07:37.207" endtime="20220703 11:07:37.208"/>
+<msg timestamp="20220703 11:24:32.227" level="INFO">${client_LastName} = Moore</msg>
+<status status="PASS" starttime="20220703 11:24:32.227" endtime="20220703 11:24:32.227"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>LAST NAME: ${client_LastName}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.208" endtime="20220703 11:07:37.208"/>
+<status status="PASS" starttime="20220703 11:24:32.227" endtime="20220703 11:24:32.228"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.206" endtime="20220703 11:07:37.208"/>
+<status status="PASS" starttime="20220703 11:24:32.226" endtime="20220703 11:24:32.228"/>
 </kw>
 <kw name="Generate Email" library="Config">
 <kw name="Email" library="FakerLibrary">
 <var>${client_Email}</var>
-<msg timestamp="20220703 11:07:37.210" level="INFO">${client_Email} = davidsoneric@example.net</msg>
-<status status="PASS" starttime="20220703 11:07:37.209" endtime="20220703 11:07:37.210"/>
+<msg timestamp="20220703 11:24:32.229" level="INFO">${client_Email} = gary03@example.org</msg>
+<status status="PASS" starttime="20220703 11:24:32.229" endtime="20220703 11:24:32.229"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_Email}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.211" level="INFO">${client_Email} = davidsoneric@example.net</msg>
-<status status="PASS" starttime="20220703 11:07:37.210" endtime="20220703 11:07:37.211"/>
+<msg timestamp="20220703 11:24:32.230" level="INFO">${client_Email} = gary03@example.org</msg>
+<status status="PASS" starttime="20220703 11:24:32.229" endtime="20220703 11:24:32.230"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>EMAIL: ${client_Email}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.211" endtime="20220703 11:07:37.212"/>
+<status status="PASS" starttime="20220703 11:24:32.230" endtime="20220703 11:24:32.231"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.208" endtime="20220703 11:07:37.212"/>
+<status status="PASS" starttime="20220703 11:24:32.228" endtime="20220703 11:24:32.231"/>
 </kw>
 <kw name="Generate Password" library="Config">
 <kw name="Numerical Characters" library="Config">
@@ -120,108 +120,108 @@
 <var>${numerical_character}</var>
 <arg>digits=${lenght}</arg>
 <doc>Generate a random integer according to the following rules:</doc>
-<msg timestamp="20220703 11:07:37.214" level="INFO">${numerical_character} = 6240676458</msg>
-<status status="PASS" starttime="20220703 11:07:37.213" endtime="20220703 11:07:37.214"/>
+<msg timestamp="20220703 11:24:32.232" level="INFO">${numerical_character} = 6606102924</msg>
+<status status="PASS" starttime="20220703 11:24:32.232" endtime="20220703 11:24:32.232"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${numerical_character}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.214" level="INFO">${numerical_character} = 6240676458</msg>
-<status status="PASS" starttime="20220703 11:07:37.214" endtime="20220703 11:07:37.214"/>
+<msg timestamp="20220703 11:24:32.233" level="INFO">${numerical_character} = 6606102924</msg>
+<status status="PASS" starttime="20220703 11:24:32.233" endtime="20220703 11:24:32.233"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.213" endtime="20220703 11:07:37.215"/>
+<status status="PASS" starttime="20220703 11:24:32.232" endtime="20220703 11:24:32.233"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_Password}</arg>
 <arg>${numerical_character}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.216" level="INFO">${client_Password} = 6240676458</msg>
-<status status="PASS" starttime="20220703 11:07:37.215" endtime="20220703 11:07:37.216"/>
+<msg timestamp="20220703 11:24:32.235" level="INFO">${client_Password} = 6606102924</msg>
+<status status="PASS" starttime="20220703 11:24:32.234" endtime="20220703 11:24:32.235"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>PASSWORD: ${client_Password}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.217" endtime="20220703 11:07:37.217"/>
+<status status="PASS" starttime="20220703 11:24:32.235" endtime="20220703 11:24:32.236"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.212" endtime="20220703 11:07:37.218"/>
+<status status="PASS" starttime="20220703 11:24:32.231" endtime="20220703 11:24:32.236"/>
 </kw>
 <kw name="Generate Address" library="Config">
 <kw name="Street Address" library="FakerLibrary">
 <var>${client_Address}</var>
 <doc>:example: '791 Crist Parks'</doc>
-<msg timestamp="20220703 11:07:37.218" level="INFO">${client_Address} = 5203 Hanna Islands Suite 541</msg>
-<status status="PASS" starttime="20220703 11:07:37.218" endtime="20220703 11:07:37.219"/>
+<msg timestamp="20220703 11:24:32.238" level="INFO">${client_Address} = 26672 Pratt Key</msg>
+<status status="PASS" starttime="20220703 11:24:32.237" endtime="20220703 11:24:32.238"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_Address}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.219" level="INFO">${client_Address} = 5203 Hanna Islands Suite 541</msg>
-<status status="PASS" starttime="20220703 11:07:37.219" endtime="20220703 11:07:37.219"/>
+<msg timestamp="20220703 11:24:32.238" level="INFO">${client_Address} = 26672 Pratt Key</msg>
+<status status="PASS" starttime="20220703 11:24:32.238" endtime="20220703 11:24:32.238"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>ADDRESS: ${client_Address}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.219" endtime="20220703 11:07:37.220"/>
+<status status="PASS" starttime="20220703 11:24:32.238" endtime="20220703 11:24:32.239"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.218" endtime="20220703 11:07:37.220"/>
+<status status="PASS" starttime="20220703 11:24:32.237" endtime="20220703 11:24:32.239"/>
 </kw>
 <kw name="Generate City" library="Config">
 <kw name="City" library="FakerLibrary">
 <var>${client_City}</var>
 <doc>:example: 'Sashabury'</doc>
-<msg timestamp="20220703 11:07:37.221" level="INFO">${client_City} = North Shaun</msg>
-<status status="PASS" starttime="20220703 11:07:37.220" endtime="20220703 11:07:37.221"/>
+<msg timestamp="20220703 11:24:32.240" level="INFO">${client_City} = South Shannonside</msg>
+<status status="PASS" starttime="20220703 11:24:32.240" endtime="20220703 11:24:32.240"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_City}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.221" level="INFO">${client_City} = North Shaun</msg>
-<status status="PASS" starttime="20220703 11:07:37.221" endtime="20220703 11:07:37.221"/>
+<msg timestamp="20220703 11:24:32.241" level="INFO">${client_City} = South Shannonside</msg>
+<status status="PASS" starttime="20220703 11:24:32.240" endtime="20220703 11:24:32.241"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>CITY: ${client_City}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.221" endtime="20220703 11:07:37.222"/>
+<status status="PASS" starttime="20220703 11:24:32.241" endtime="20220703 11:24:32.241"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.220" endtime="20220703 11:07:37.222"/>
+<status status="PASS" starttime="20220703 11:24:32.239" endtime="20220703 11:24:32.242"/>
 </kw>
 <kw name="Generate PostCode" library="Config">
 <kw name="Postalcode" library="FakerLibrary">
 <var>${client_postalcode}</var>
-<msg timestamp="20220703 11:07:37.223" level="INFO">${client_postalcode} = 47867</msg>
-<status status="PASS" starttime="20220703 11:07:37.223" endtime="20220703 11:07:37.223"/>
+<msg timestamp="20220703 11:24:32.243" level="INFO">${client_postalcode} = 72031</msg>
+<status status="PASS" starttime="20220703 11:24:32.243" endtime="20220703 11:24:32.243"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_postalcode}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.224" level="INFO">${client_postalcode} = 47867</msg>
-<status status="PASS" starttime="20220703 11:07:37.223" endtime="20220703 11:07:37.224"/>
+<msg timestamp="20220703 11:24:32.244" level="INFO">${client_postalcode} = 72031</msg>
+<status status="PASS" starttime="20220703 11:24:32.243" endtime="20220703 11:24:32.244"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>POSTALCODE: ${client_postalcode}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.224" endtime="20220703 11:07:37.224"/>
+<status status="PASS" starttime="20220703 11:24:32.244" endtime="20220703 11:24:32.244"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.222" endtime="20220703 11:07:37.225"/>
+<status status="PASS" starttime="20220703 11:24:32.242" endtime="20220703 11:24:32.244"/>
 </kw>
 <kw name="Generate State" library="Config">
 <kw name="State" library="FakerLibrary">
 <var>${client_State}</var>
-<msg timestamp="20220703 11:07:37.226" level="INFO">${client_State} = Washington</msg>
-<status status="PASS" starttime="20220703 11:07:37.225" endtime="20220703 11:07:37.226"/>
+<msg timestamp="20220703 11:24:32.245" level="INFO">${client_State} = Connecticut</msg>
+<status status="PASS" starttime="20220703 11:24:32.245" endtime="20220703 11:24:32.245"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_State}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.227" level="INFO">${client_State} = Washington</msg>
-<status status="PASS" starttime="20220703 11:07:37.226" endtime="20220703 11:07:37.227"/>
+<msg timestamp="20220703 11:24:32.246" level="INFO">${client_State} = Connecticut</msg>
+<status status="PASS" starttime="20220703 11:24:32.246" endtime="20220703 11:24:32.246"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>STATE: ${client_State}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.227" endtime="20220703 11:07:37.227"/>
+<status status="PASS" starttime="20220703 11:24:32.246" endtime="20220703 11:24:32.247"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.225" endtime="20220703 11:07:37.228"/>
+<status status="PASS" starttime="20220703 11:24:32.245" endtime="20220703 11:24:32.247"/>
 </kw>
 <kw name="Generate Country" library="Config">
 <doc>I'm only using United States cause it's the only country this website allows.</doc>
@@ -229,15 +229,15 @@
 <arg>${client_Country}</arg>
 <arg>United States</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.231" level="INFO">${client_Country} = United States</msg>
-<status status="PASS" starttime="20220703 11:07:37.229" endtime="20220703 11:07:37.231"/>
+<msg timestamp="20220703 11:24:32.250" level="INFO">${client_Country} = United States</msg>
+<status status="PASS" starttime="20220703 11:24:32.248" endtime="20220703 11:24:32.250"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>COUNTRY: ${client_Country}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.231" endtime="20220703 11:07:37.232"/>
+<status status="PASS" starttime="20220703 11:24:32.250" endtime="20220703 11:24:32.251"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.228" endtime="20220703 11:07:37.232"/>
+<status status="PASS" starttime="20220703 11:24:32.248" endtime="20220703 11:24:32.251"/>
 </kw>
 <kw name="Generate Phone" library="Config">
 <kw name="Random Int" library="FakerLibrary">
@@ -247,54 +247,54 @@
 <arg>1</arg>
 <doc>Generate a random integer between two integers ``min`` and ``max`` inclusive
 while observing the provided ``step`` value.</doc>
-<msg timestamp="20220703 11:07:37.234" level="INFO">${client_PhoneNumber} = 5773259024</msg>
-<status status="PASS" starttime="20220703 11:07:37.233" endtime="20220703 11:07:37.234"/>
+<msg timestamp="20220703 11:24:32.252" level="INFO">${client_PhoneNumber} = 4009709530</msg>
+<status status="PASS" starttime="20220703 11:24:32.252" endtime="20220703 11:24:32.252"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_PhoneNumber}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.235" level="INFO">${client_PhoneNumber} = 5773259024</msg>
-<status status="PASS" starttime="20220703 11:07:37.234" endtime="20220703 11:07:37.235"/>
+<msg timestamp="20220703 11:24:32.253" level="INFO">${client_PhoneNumber} = 4009709530</msg>
+<status status="PASS" starttime="20220703 11:24:32.253" endtime="20220703 11:24:32.253"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>PHONE NUMBER: ${client_PhoneNumber}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.235" endtime="20220703 11:07:37.236"/>
+<status status="PASS" starttime="20220703 11:24:32.253" endtime="20220703 11:24:32.254"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.232" endtime="20220703 11:07:37.236"/>
+<status status="PASS" starttime="20220703 11:24:32.251" endtime="20220703 11:24:32.254"/>
 </kw>
 <kw name="Generate Address Alias" library="Config">
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${client_AddressAlias}</arg>
 <arg>"${client_FirstName}'s House"</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:37.239" level="INFO">${client_AddressAlias} = "Lisa's House"</msg>
-<status status="PASS" starttime="20220703 11:07:37.237" endtime="20220703 11:07:37.239"/>
+<msg timestamp="20220703 11:24:32.256" level="INFO">${client_AddressAlias} = "Monica's House"</msg>
+<status status="PASS" starttime="20220703 11:24:32.255" endtime="20220703 11:24:32.257"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>ADDRESS ALIAS: ${client_AddressAlias}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:37.239" endtime="20220703 11:07:37.240"/>
+<status status="PASS" starttime="20220703 11:24:32.257" endtime="20220703 11:24:32.257"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.236" endtime="20220703 11:07:37.241"/>
+<status status="PASS" starttime="20220703 11:24:32.254" endtime="20220703 11:24:32.258"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.203" endtime="20220703 11:07:37.241"/>
+<status status="PASS" starttime="20220703 11:24:32.222" endtime="20220703 11:24:32.258"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${image_logo}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220703 11:07:37.241" endtime="20220703 11:07:37.252"/>
+<status status="PASS" starttime="20220703 11:24:32.258" endtime="20220703 11:24:32.268"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${button_signin}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:37.253" level="INFO">Clicking element 'xpath=//a[@class='login'][contains(.,'Sign in')]'.</msg>
-<status status="PASS" starttime="20220703 11:07:37.253" endtime="20220703 11:07:41.616"/>
+<msg timestamp="20220703 11:24:32.268" level="INFO">Clicking element 'xpath=//a[@class='login'][contains(.,'Sign in')]'.</msg>
+<status status="PASS" starttime="20220703 11:24:32.268" endtime="20220703 11:24:36.922"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${page_Heading}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220703 11:07:41.617" endtime="20220703 11:07:41.628"/>
+<status status="PASS" starttime="20220703 11:24:36.922" endtime="20220703 11:24:36.935"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_emailaddress}</arg>
@@ -302,36 +302,36 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:41.630" endtime="20220703 11:07:41.655"/>
+<status status="PASS" starttime="20220703 11:24:36.936" endtime="20220703 11:24:36.956"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:41.656" level="INFO">Clicking element 'id=email_create'.</msg>
-<status status="PASS" starttime="20220703 11:07:41.655" endtime="20220703 11:07:41.705"/>
+<msg timestamp="20220703 11:24:36.957" level="INFO">Clicking element 'id=email_create'.</msg>
+<status status="PASS" starttime="20220703 11:24:36.957" endtime="20220703 11:24:36.994"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:41.705" level="INFO">Typing text 'davidsoneric@example.net' into text field 'id=email_create'.</msg>
-<status status="PASS" starttime="20220703 11:07:41.705" endtime="20220703 11:07:41.776"/>
+<msg timestamp="20220703 11:24:36.995" level="INFO">Typing text 'gary03@example.org' into text field 'id=email_create'.</msg>
+<status status="PASS" starttime="20220703 11:24:36.995" endtime="20220703 11:24:37.056"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:41.629" endtime="20220703 11:07:41.777"/>
+<status status="PASS" starttime="20220703 11:24:36.935" endtime="20220703 11:24:37.057"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${button_submitcreate}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:41.778" level="INFO">Clicking element 'id=SubmitCreate'.</msg>
-<status status="PASS" starttime="20220703 11:07:41.777" endtime="20220703 11:07:41.835"/>
+<msg timestamp="20220703 11:24:37.057" level="INFO">Clicking element 'id=SubmitCreate'.</msg>
+<status status="PASS" starttime="20220703 11:24:37.057" endtime="20220703 11:24:37.102"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:37.202" endtime="20220703 11:07:41.836"/>
+<status status="PASS" starttime="20220703 11:24:32.222" endtime="20220703 11:24:37.102"/>
 </kw>
 <kw name="When I submit registration form" library="WebTesting_AutomationPractice_Controller">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${page_Heading_CreateAccount}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220703 11:07:41.839" endtime="20220703 11:07:44.121"/>
+<status status="PASS" starttime="20220703 11:24:37.104" endtime="20220703 11:24:39.979"/>
 </kw>
 <kw name="Fills title" library="Config">
 <kw name="Create List" library="BuiltIn">
@@ -339,30 +339,30 @@ while observing the provided ``step`` value.</doc>
 <arg>1</arg>
 <arg>2</arg>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20220703 11:07:44.122" level="INFO">${fieldTitle} = ['1', '2']</msg>
-<status status="PASS" starttime="20220703 11:07:44.122" endtime="20220703 11:07:44.122"/>
+<msg timestamp="20220703 11:24:39.980" level="INFO">${fieldTitle} = ['1', '2']</msg>
+<status status="PASS" starttime="20220703 11:24:39.980" endtime="20220703 11:24:39.980"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${fieldTitleReturn}</var>
 <arg>random.choice(${fieldTitle})</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20220703 11:07:44.123" level="INFO">${fieldTitleReturn} = 1</msg>
-<status status="PASS" starttime="20220703 11:07:44.122" endtime="20220703 11:07:44.123"/>
+<msg timestamp="20220703 11:24:39.981" level="INFO">${fieldTitleReturn} = 2</msg>
+<status status="PASS" starttime="20220703 11:24:39.980" endtime="20220703 11:24:39.981"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${input_title}</arg>
 <arg>id=id_gender${fieldTitleReturn}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220703 11:07:44.124" level="INFO">${input_title} = id=id_gender1</msg>
-<status status="PASS" starttime="20220703 11:07:44.123" endtime="20220703 11:07:44.124"/>
+<msg timestamp="20220703 11:24:39.981" level="INFO">${input_title} = id=id_gender2</msg>
+<status status="PASS" starttime="20220703 11:24:39.981" endtime="20220703 11:24:39.981"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${input_title}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.124" level="INFO">Clicking element 'id=id_gender1'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.124" endtime="20220703 11:07:44.170"/>
+<msg timestamp="20220703 11:24:39.982" level="INFO">Clicking element 'id=id_gender2'.</msg>
+<status status="PASS" starttime="20220703 11:24:39.982" endtime="20220703 11:24:40.018"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:44.121" endtime="20220703 11:07:44.170"/>
+<status status="PASS" starttime="20220703 11:24:39.979" endtime="20220703 11:24:40.018"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_firstname}</arg>
@@ -370,22 +370,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:44.171" endtime="20220703 11:07:44.197"/>
+<status status="PASS" starttime="20220703 11:24:40.019" endtime="20220703 11:24:40.043"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.197" level="INFO">Clicking element 'id=customer_firstname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.197" endtime="20220703 11:07:44.242"/>
+<msg timestamp="20220703 11:24:40.043" level="INFO">Clicking element 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.043" endtime="20220703 11:24:40.083"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.243" level="INFO">Typing text 'Lisa' into text field 'id=customer_firstname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.242" endtime="20220703 11:07:44.298"/>
+<msg timestamp="20220703 11:24:40.084" level="INFO">Typing text 'Monica' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.083" endtime="20220703 11:24:40.129"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:44.170" endtime="20220703 11:07:44.298"/>
+<status status="PASS" starttime="20220703 11:24:40.019" endtime="20220703 11:24:40.129"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_lastname}</arg>
@@ -393,22 +393,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:44.299" endtime="20220703 11:07:44.323"/>
+<status status="PASS" starttime="20220703 11:24:40.130" endtime="20220703 11:24:40.154"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.324" level="INFO">Clicking element 'id=customer_lastname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.324" endtime="20220703 11:07:44.370"/>
+<msg timestamp="20220703 11:24:40.154" level="INFO">Clicking element 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.154" endtime="20220703 11:24:40.190"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.370" level="INFO">Typing text 'Garcia' into text field 'id=customer_lastname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.370" endtime="20220703 11:07:44.425"/>
+<msg timestamp="20220703 11:24:40.191" level="INFO">Typing text 'Moore' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.190" endtime="20220703 11:24:40.242"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:44.298" endtime="20220703 11:07:44.425"/>
+<status status="PASS" starttime="20220703 11:24:40.129" endtime="20220703 11:24:40.243"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_email}</arg>
@@ -416,22 +416,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:44.426" endtime="20220703 11:07:44.449"/>
+<status status="PASS" starttime="20220703 11:24:40.243" endtime="20220703 11:24:40.265"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.449" level="INFO">Clicking element 'id=email'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.449" endtime="20220703 11:07:44.495"/>
+<msg timestamp="20220703 11:24:40.265" level="INFO">Clicking element 'id=email'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.265" endtime="20220703 11:24:40.304"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.496" level="INFO">Typing text 'davidsoneric@example.net' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.495" endtime="20220703 11:07:44.582"/>
+<msg timestamp="20220703 11:24:40.305" level="INFO">Typing text 'gary03@example.org' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.305" endtime="20220703 11:24:40.373"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:44.425" endtime="20220703 11:07:44.582"/>
+<status status="PASS" starttime="20220703 11:24:40.243" endtime="20220703 11:24:40.374"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_password}</arg>
@@ -439,22 +439,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:44.583" endtime="20220703 11:07:44.607"/>
+<status status="PASS" starttime="20220703 11:24:40.375" endtime="20220703 11:24:40.397"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.607" level="INFO">Clicking element 'xpath=//input[contains(@type,'password')]'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.607" endtime="20220703 11:07:44.651"/>
+<msg timestamp="20220703 11:24:40.397" level="INFO">Clicking element 'xpath=//input[contains(@type,'password')]'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.397" endtime="20220703 11:24:40.437"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.651" level="INFO">Typing text '6240676458' into text field 'xpath=//input[contains(@type,'password')]'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.651" endtime="20220703 11:07:44.702"/>
+<msg timestamp="20220703 11:24:40.438" level="INFO">Typing text '6606102924' into text field 'xpath=//input[contains(@type,'password')]'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.437" endtime="20220703 11:24:40.482"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:44.582" endtime="20220703 11:07:44.703"/>
+<status status="PASS" starttime="20220703 11:24:40.374" endtime="20220703 11:24:40.482"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_address_firstname}</arg>
@@ -462,22 +462,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:44.704" endtime="20220703 11:07:44.771"/>
+<status status="PASS" starttime="20220703 11:24:40.483" endtime="20220703 11:24:40.541"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.771" level="INFO">Clicking element 'id=firstname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.771" endtime="20220703 11:07:44.820"/>
+<msg timestamp="20220703 11:24:40.542" level="INFO">Clicking element 'id=firstname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.542" endtime="20220703 11:24:40.585"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.820" level="INFO">Typing text 'Lisa' into text field 'id=firstname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.820" endtime="20220703 11:07:44.881"/>
+<msg timestamp="20220703 11:24:40.586" level="INFO">Typing text 'Monica' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.585" endtime="20220703 11:24:40.697"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:44.703" endtime="20220703 11:07:44.881"/>
+<status status="PASS" starttime="20220703 11:24:40.482" endtime="20220703 11:24:40.698"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_address_lastname}</arg>
@@ -485,22 +485,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:44.882" endtime="20220703 11:07:44.906"/>
+<status status="PASS" starttime="20220703 11:24:40.699" endtime="20220703 11:24:40.729"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.906" level="INFO">Clicking element 'id=lastname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.906" endtime="20220703 11:07:44.953"/>
+<msg timestamp="20220703 11:24:40.730" level="INFO">Clicking element 'id=lastname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.730" endtime="20220703 11:24:40.766"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:44.953" level="INFO">Typing text 'Garcia' into text field 'id=lastname'.</msg>
-<status status="PASS" starttime="20220703 11:07:44.953" endtime="20220703 11:07:45.019"/>
+<msg timestamp="20220703 11:24:40.767" level="INFO">Typing text 'Moore' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.767" endtime="20220703 11:24:40.825"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:44.881" endtime="20220703 11:07:45.019"/>
+<status status="PASS" starttime="20220703 11:24:40.698" endtime="20220703 11:24:40.825"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_address}</arg>
@@ -508,22 +508,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:45.020" endtime="20220703 11:07:45.043"/>
+<status status="PASS" starttime="20220703 11:24:40.826" endtime="20220703 11:24:40.846"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.043" level="INFO">Clicking element 'id=address1'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.043" endtime="20220703 11:07:45.086"/>
+<msg timestamp="20220703 11:24:40.847" level="INFO">Clicking element 'id=address1'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.847" endtime="20220703 11:24:40.885"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.086" level="INFO">Typing text '5203 Hanna Islands Suite 541' into text field 'id=address1'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.086" endtime="20220703 11:07:45.160"/>
+<msg timestamp="20220703 11:24:40.886" level="INFO">Typing text '26672 Pratt Key' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.885" endtime="20220703 11:24:40.940"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:45.019" endtime="20220703 11:07:45.160"/>
+<status status="PASS" starttime="20220703 11:24:40.825" endtime="20220703 11:24:40.941"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_city}</arg>
@@ -531,29 +531,29 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:45.161" endtime="20220703 11:07:45.184"/>
+<status status="PASS" starttime="20220703 11:24:40.941" endtime="20220703 11:24:40.962"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.184" level="INFO">Clicking element 'id=city'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.184" endtime="20220703 11:07:45.232"/>
+<msg timestamp="20220703 11:24:40.963" level="INFO">Clicking element 'id=city'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.962" endtime="20220703 11:24:40.999"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.233" level="INFO">Typing text 'North Shaun' into text field 'id=city'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.232" endtime="20220703 11:07:45.304"/>
+<msg timestamp="20220703 11:24:41.000" level="INFO">Typing text 'South Shannonside' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20220703 11:24:40.999" endtime="20220703 11:24:41.052"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:45.160" endtime="20220703 11:07:45.304"/>
+<status status="PASS" starttime="20220703 11:24:40.941" endtime="20220703 11:24:41.053"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${select_state}</arg>
 <arg>${client_State}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220703 11:07:45.305" level="INFO">Selecting options from selection list 'id=id_state' by label Washington.</msg>
-<status status="PASS" starttime="20220703 11:07:45.304" endtime="20220703 11:07:45.364"/>
+<msg timestamp="20220703 11:24:41.054" level="INFO">Selecting options from selection list 'id=id_state' by label Connecticut.</msg>
+<status status="PASS" starttime="20220703 11:24:41.053" endtime="20220703 11:24:41.110"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_zipcode}</arg>
@@ -561,29 +561,29 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:45.364" endtime="20220703 11:07:45.384"/>
+<status status="PASS" starttime="20220703 11:24:41.111" endtime="20220703 11:24:41.135"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.385" level="INFO">Clicking element 'id=postcode'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.384" endtime="20220703 11:07:45.426"/>
+<msg timestamp="20220703 11:24:41.136" level="INFO">Clicking element 'id=postcode'.</msg>
+<status status="PASS" starttime="20220703 11:24:41.135" endtime="20220703 11:24:41.183"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.426" level="INFO">Typing text '47867' into text field 'id=postcode'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.426" endtime="20220703 11:07:45.488"/>
+<msg timestamp="20220703 11:24:41.184" level="INFO">Typing text '72031' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20220703 11:24:41.183" endtime="20220703 11:24:41.243"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:45.364" endtime="20220703 11:07:45.488"/>
+<status status="PASS" starttime="20220703 11:24:41.110" endtime="20220703 11:24:41.244"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${select_country}</arg>
 <arg>${client_Country}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220703 11:07:45.490" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
-<status status="PASS" starttime="20220703 11:07:45.489" endtime="20220703 11:07:45.525"/>
+<msg timestamp="20220703 11:24:41.244" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
+<status status="PASS" starttime="20220703 11:24:41.244" endtime="20220703 11:24:41.275"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_mobilephone}</arg>
@@ -591,22 +591,22 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:45.527" endtime="20220703 11:07:45.551"/>
+<status status="PASS" starttime="20220703 11:24:41.276" endtime="20220703 11:24:41.302"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.552" level="INFO">Clicking element 'id=phone_mobile'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.551" endtime="20220703 11:07:45.595"/>
+<msg timestamp="20220703 11:24:41.303" level="INFO">Clicking element 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20220703 11:24:41.302" endtime="20220703 11:24:41.342"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.596" level="INFO">Typing text '5773259024' into text field 'id=phone_mobile'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.596" endtime="20220703 11:07:45.649"/>
+<msg timestamp="20220703 11:24:41.342" level="INFO">Typing text '4009709530' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20220703 11:24:41.342" endtime="20220703 11:24:41.390"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:45.526" endtime="20220703 11:07:45.649"/>
+<status status="PASS" starttime="20220703 11:24:41.276" endtime="20220703 11:24:41.390"/>
 </kw>
 <kw name="Fills field" library="Config">
 <arg>${input_addressalias}</arg>
@@ -614,70 +614,754 @@ while observing the provided ``step`` value.</doc>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220703 11:07:45.650" endtime="20220703 11:07:45.673"/>
+<status status="PASS" starttime="20220703 11:24:41.391" endtime="20220703 11:24:41.412"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${field}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.674" level="INFO">Clicking element 'id=alias'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.674" endtime="20220703 11:07:45.714"/>
+<msg timestamp="20220703 11:24:41.412" level="INFO">Clicking element 'id=alias'.</msg>
+<status status="PASS" starttime="20220703 11:24:41.412" endtime="20220703 11:24:41.449"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.715" level="INFO">Typing text '"Lisa's House"' into text field 'id=alias'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.714" endtime="20220703 11:07:45.789"/>
+<msg timestamp="20220703 11:24:41.450" level="INFO">Typing text '"Monica's House"' into text field 'id=alias'.</msg>
+<status status="PASS" starttime="20220703 11:24:41.449" endtime="20220703 11:24:41.519"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:45.649" endtime="20220703 11:07:45.790"/>
+<status status="PASS" starttime="20220703 11:24:41.390" endtime="20220703 11:24:41.519"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${button_submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220703 11:07:45.790" level="INFO">Clicking element 'id=submitAccount'.</msg>
-<status status="PASS" starttime="20220703 11:07:45.790" endtime="20220703 11:07:47.529"/>
+<msg timestamp="20220703 11:24:41.519" level="INFO">Clicking element 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20220703 11:24:41.519" endtime="20220703 11:24:44.725"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:41.838" endtime="20220703 11:07:47.530"/>
+<status status="PASS" starttime="20220703 11:24:37.103" endtime="20220703 11:24:44.726"/>
 </kw>
 <kw name="Then the registration must succeed" library="WebTesting_AutomationPractice_Controller">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${page_Heading_MyAccount}</arg>
 <arg>error=Locator ${page_Heading_MyAccount} not found.</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220703 11:07:47.531" endtime="20220703 11:07:47.542"/>
+<status status="PASS" starttime="20220703 11:24:44.728" endtime="20220703 11:24:44.737"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>-----SUCCESFULL REGISTRATION</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220703 11:07:47.542" endtime="20220703 11:07:47.543"/>
+<status status="PASS" starttime="20220703 11:24:44.738" endtime="20220703 11:24:44.738"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:47.530" endtime="20220703 11:07:47.543"/>
+<status status="PASS" starttime="20220703 11:24:44.727" endtime="20220703 11:24:44.739"/>
 </kw>
 <kw name="Close Browser with Screenshot" library="Config" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>filename=selenium-screenshot-{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220703 11:07:47.724" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220703 11:07:47.545" endtime="20220703 11:07:47.724"/>
+<msg timestamp="20220703 11:24:44.898" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220703 11:24:44.740" endtime="20220703 11:24:44.898"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220703 11:07:47.725" endtime="20220703 11:07:49.984"/>
+<status status="PASS" starttime="20220703 11:24:44.898" endtime="20220703 11:24:47.098"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:47.544" endtime="20220703 11:07:49.984"/>
+<status status="PASS" starttime="20220703 11:24:44.739" endtime="20220703 11:24:47.099"/>
 </kw>
-<status status="PASS" starttime="20220703 11:07:30.521" endtime="20220703 11:07:49.985"/>
+<status status="PASS" starttime="20220703 11:24:25.915" endtime="20220703 11:24:47.099"/>
 </test>
-<status status="PASS" starttime="20220703 11:07:29.330" endtime="20220703 11:07:49.987"/>
+<test id="s1-t2" name="Scenario 02: Registration must not complete - First Name With Special Characters">
+<kw name="Run Keywords" library="BuiltIn" type="SETUP">
+<arg>Given a user opens his browser in "${URL_AutomationPractice}"</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Given a user opens his browser in &quot;http://automationpractice.com/&quot;" library="Config" sourcename="Given a user opens his browser in &quot;${URL}&quot;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<arg>executable_path=${chromedriver_path}</arg>
+<arg>options=add_argument("--incognito"); add_argument("--ignore-certificate-errors"); add_argument("--start-maximized"); add_argument("--disable-popup-blocking"); add_argument("--disable-notifications"); add_argument("--disable-extensions"); add_argument("--disable-web-security"); add_argument("--window-size=1920,1080")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220703 11:24:47.104" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/'.</msg>
+<status status="PASS" starttime="20220703 11:24:47.103" endtime="20220703 11:24:55.176"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220703 11:24:55.176" endtime="20220703 11:24:55.288"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:47.102" endtime="20220703 11:24:55.288"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:47.102" endtime="20220703 11:24:55.288"/>
+</kw>
+<kw name="Given a user doesn't have an account in Automation Practice" library="WebTesting_AutomationPractice_Controller">
+<kw name="Generate Data for Registration" library="Config">
+<kw name="Log To Console" library="BuiltIn">
+<arg>----- GENERATING DATA FOR REGISTRATION FORM</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.289" endtime="20220703 11:24:55.290"/>
+</kw>
+<kw name="Generate First Name" library="Config">
+<kw name="First Name" library="FakerLibrary">
+<var>${client_FirstName}</var>
+<msg timestamp="20220703 11:24:55.290" level="INFO">${client_FirstName} = Dalton</msg>
+<status status="PASS" starttime="20220703 11:24:55.290" endtime="20220703 11:24:55.290"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_FirstName}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.291" level="INFO">${client_FirstName} = Dalton</msg>
+<status status="PASS" starttime="20220703 11:24:55.291" endtime="20220703 11:24:55.291"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>FIRST NAME: ${client_FirstName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.291" endtime="20220703 11:24:55.292"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.290" endtime="20220703 11:24:55.292"/>
+</kw>
+<kw name="Generate Last Name" library="Config">
+<kw name="Last Name" library="FakerLibrary">
+<var>${client_LastName}</var>
+<msg timestamp="20220703 11:24:55.293" level="INFO">${client_LastName} = Prince</msg>
+<status status="PASS" starttime="20220703 11:24:55.292" endtime="20220703 11:24:55.293"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_LastName}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.293" level="INFO">${client_LastName} = Prince</msg>
+<status status="PASS" starttime="20220703 11:24:55.293" endtime="20220703 11:24:55.293"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>LAST NAME: ${client_LastName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.293" endtime="20220703 11:24:55.294"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.292" endtime="20220703 11:24:55.294"/>
+</kw>
+<kw name="Generate Email" library="Config">
+<kw name="Email" library="FakerLibrary">
+<var>${client_Email}</var>
+<msg timestamp="20220703 11:24:55.295" level="INFO">${client_Email} = christopherrogers@example.com</msg>
+<status status="PASS" starttime="20220703 11:24:55.295" endtime="20220703 11:24:55.295"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_Email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.296" level="INFO">${client_Email} = christopherrogers@example.com</msg>
+<status status="PASS" starttime="20220703 11:24:55.295" endtime="20220703 11:24:55.296"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>EMAIL: ${client_Email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.297" endtime="20220703 11:24:55.297"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.294" endtime="20220703 11:24:55.297"/>
+</kw>
+<kw name="Generate Password" library="Config">
+<kw name="Numerical Characters" library="Config">
+<arg>10</arg>
+<doc>You should define how many special characters you want by informing the lenght.</doc>
+<kw name="Random Number" library="FakerLibrary">
+<var>${numerical_character}</var>
+<arg>digits=${lenght}</arg>
+<doc>Generate a random integer according to the following rules:</doc>
+<msg timestamp="20220703 11:24:55.300" level="INFO">${numerical_character} = 9000631885</msg>
+<status status="PASS" starttime="20220703 11:24:55.299" endtime="20220703 11:24:55.300"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${numerical_character}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.300" level="INFO">${numerical_character} = 9000631885</msg>
+<status status="PASS" starttime="20220703 11:24:55.300" endtime="20220703 11:24:55.300"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.299" endtime="20220703 11:24:55.300"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_Password}</arg>
+<arg>${numerical_character}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.302" level="INFO">${client_Password} = 9000631885</msg>
+<status status="PASS" starttime="20220703 11:24:55.301" endtime="20220703 11:24:55.302"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>PASSWORD: ${client_Password}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.302" endtime="20220703 11:24:55.303"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.298" endtime="20220703 11:24:55.303"/>
+</kw>
+<kw name="Generate Address" library="Config">
+<kw name="Street Address" library="FakerLibrary">
+<var>${client_Address}</var>
+<doc>:example: '791 Crist Parks'</doc>
+<msg timestamp="20220703 11:24:55.304" level="INFO">${client_Address} = 691 Jones Streets</msg>
+<status status="PASS" starttime="20220703 11:24:55.303" endtime="20220703 11:24:55.304"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_Address}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.305" level="INFO">${client_Address} = 691 Jones Streets</msg>
+<status status="PASS" starttime="20220703 11:24:55.304" endtime="20220703 11:24:55.305"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>ADDRESS: ${client_Address}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.305" endtime="20220703 11:24:55.305"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.303" endtime="20220703 11:24:55.306"/>
+</kw>
+<kw name="Generate City" library="Config">
+<kw name="City" library="FakerLibrary">
+<var>${client_City}</var>
+<doc>:example: 'Sashabury'</doc>
+<msg timestamp="20220703 11:24:55.306" level="INFO">${client_City} = West Philip</msg>
+<status status="PASS" starttime="20220703 11:24:55.306" endtime="20220703 11:24:55.307"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_City}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.307" level="INFO">${client_City} = West Philip</msg>
+<status status="PASS" starttime="20220703 11:24:55.307" endtime="20220703 11:24:55.307"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>CITY: ${client_City}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.307" endtime="20220703 11:24:55.308"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.306" endtime="20220703 11:24:55.308"/>
+</kw>
+<kw name="Generate PostCode" library="Config">
+<kw name="Postalcode" library="FakerLibrary">
+<var>${client_postalcode}</var>
+<msg timestamp="20220703 11:24:55.309" level="INFO">${client_postalcode} = 52002</msg>
+<status status="PASS" starttime="20220703 11:24:55.309" endtime="20220703 11:24:55.309"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_postalcode}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.310" level="INFO">${client_postalcode} = 52002</msg>
+<status status="PASS" starttime="20220703 11:24:55.310" endtime="20220703 11:24:55.310"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>POSTALCODE: ${client_postalcode}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.310" endtime="20220703 11:24:55.311"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.308" endtime="20220703 11:24:55.311"/>
+</kw>
+<kw name="Generate State" library="Config">
+<kw name="State" library="FakerLibrary">
+<var>${client_State}</var>
+<msg timestamp="20220703 11:24:55.312" level="INFO">${client_State} = Nebraska</msg>
+<status status="PASS" starttime="20220703 11:24:55.312" endtime="20220703 11:24:55.312"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_State}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.312" level="INFO">${client_State} = Nebraska</msg>
+<status status="PASS" starttime="20220703 11:24:55.312" endtime="20220703 11:24:55.312"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>STATE: ${client_State}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.313" endtime="20220703 11:24:55.313"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.311" endtime="20220703 11:24:55.313"/>
+</kw>
+<kw name="Generate Country" library="Config">
+<doc>I'm only using United States cause it's the only country this website allows.</doc>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_Country}</arg>
+<arg>United States</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.315" level="INFO">${client_Country} = United States</msg>
+<status status="PASS" starttime="20220703 11:24:55.314" endtime="20220703 11:24:55.316"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>COUNTRY: ${client_Country}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.316" endtime="20220703 11:24:55.317"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.313" endtime="20220703 11:24:55.317"/>
+</kw>
+<kw name="Generate Phone" library="Config">
+<kw name="Random Int" library="FakerLibrary">
+<var>${client_PhoneNumber}</var>
+<arg>2000000000</arg>
+<arg>9999999999</arg>
+<arg>1</arg>
+<doc>Generate a random integer between two integers ``min`` and ``max`` inclusive
+while observing the provided ``step`` value.</doc>
+<msg timestamp="20220703 11:24:55.318" level="INFO">${client_PhoneNumber} = 4079161439</msg>
+<status status="PASS" starttime="20220703 11:24:55.318" endtime="20220703 11:24:55.318"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_PhoneNumber}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.319" level="INFO">${client_PhoneNumber} = 4079161439</msg>
+<status status="PASS" starttime="20220703 11:24:55.319" endtime="20220703 11:24:55.319"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>PHONE NUMBER: ${client_PhoneNumber}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.319" endtime="20220703 11:24:55.320"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.317" endtime="20220703 11:24:55.321"/>
+</kw>
+<kw name="Generate Address Alias" library="Config">
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_AddressAlias}</arg>
+<arg>"${client_FirstName}'s House"</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:55.324" level="INFO">${client_AddressAlias} = "Dalton's House"</msg>
+<status status="PASS" starttime="20220703 11:24:55.322" endtime="20220703 11:24:55.324"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>ADDRESS ALIAS: ${client_AddressAlias}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:55.324" endtime="20220703 11:24:55.325"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.321" endtime="20220703 11:24:55.325"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.289" endtime="20220703 11:24:55.325"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${image_logo}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220703 11:24:55.325" endtime="20220703 11:24:55.336"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:24:55.336" level="INFO">Clicking element 'xpath=//a[@class='login'][contains(.,'Sign in')]'.</msg>
+<status status="PASS" starttime="20220703 11:24:55.336" endtime="20220703 11:24:59.696"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${page_Heading}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220703 11:24:59.697" endtime="20220703 11:24:59.709"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_emailaddress}</arg>
+<arg>${client_Email}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:24:59.710" endtime="20220703 11:24:59.731"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:24:59.732" level="INFO">Clicking element 'id=email_create'.</msg>
+<status status="PASS" starttime="20220703 11:24:59.731" endtime="20220703 11:24:59.770"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:24:59.771" level="INFO">Typing text 'christopherrogers@example.com' into text field 'id=email_create'.</msg>
+<status status="PASS" starttime="20220703 11:24:59.771" endtime="20220703 11:24:59.839"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:59.709" endtime="20220703 11:24:59.839"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submitcreate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:24:59.839" level="INFO">Clicking element 'id=SubmitCreate'.</msg>
+<status status="PASS" starttime="20220703 11:24:59.839" endtime="20220703 11:24:59.886"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:55.289" endtime="20220703 11:24:59.886"/>
+</kw>
+<kw name="When I submit registration form with first name containing only special characters" library="WebTesting_AutomationPractice_Controller">
+<kw name="Special Characters" library="Config">
+<arg>3</arg>
+<doc>You should define how many special characters you want by informing the lenght.</doc>
+<kw name="Password" library="FakerLibrary">
+<var>${special_character}</var>
+<arg>length=${length}</arg>
+<arg>special_chars=True</arg>
+<arg>digits=False</arg>
+<arg>upper_case=False</arg>
+<arg>lower_case=False</arg>
+<doc>Generate a random password of the specified ``length``.</doc>
+<msg timestamp="20220703 11:24:59.888" level="INFO">${special_character} = !^_</msg>
+<status status="PASS" starttime="20220703 11:24:59.888" endtime="20220703 11:24:59.888"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${special_character}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:59.889" level="INFO">${special_character} = !^_</msg>
+<status status="PASS" starttime="20220703 11:24:59.888" endtime="20220703 11:24:59.889"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:59.887" endtime="20220703 11:24:59.889"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${client_FirstName}</arg>
+<arg>${special_character}${special_character}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:24:59.889" level="INFO">${client_FirstName} = !^_!^_</msg>
+<status status="PASS" starttime="20220703 11:24:59.889" endtime="20220703 11:24:59.889"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>---------------------------</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:59.890" endtime="20220703 11:24:59.891"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>NAME WITH SPECIAL CHARACTERS: ${client_FirstName}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:24:59.891" endtime="20220703 11:24:59.892"/>
+</kw>
+<kw name="I submit registration form" library="WebTesting_AutomationPractice_Controller">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${page_Heading_CreateAccount}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220703 11:24:59.893" endtime="20220703 11:25:01.332"/>
+</kw>
+<kw name="Fills title" library="Config">
+<kw name="Create List" library="BuiltIn">
+<var>${fieldTitle}</var>
+<arg>1</arg>
+<arg>2</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20220703 11:25:01.333" level="INFO">${fieldTitle} = ['1', '2']</msg>
+<status status="PASS" starttime="20220703 11:25:01.333" endtime="20220703 11:25:01.333"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${fieldTitleReturn}</var>
+<arg>random.choice(${fieldTitle})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220703 11:25:01.333" level="INFO">${fieldTitleReturn} = 2</msg>
+<status status="PASS" starttime="20220703 11:25:01.333" endtime="20220703 11:25:01.334"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${input_title}</arg>
+<arg>id=id_gender${fieldTitleReturn}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20220703 11:25:01.334" level="INFO">${input_title} = id=id_gender2</msg>
+<status status="PASS" starttime="20220703 11:25:01.334" endtime="20220703 11:25:01.334"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_title}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.334" level="INFO">Clicking element 'id=id_gender2'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.334" endtime="20220703 11:25:01.367"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:01.332" endtime="20220703 11:25:01.367"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_firstname}</arg>
+<arg>${client_FirstName}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:01.367" endtime="20220703 11:25:01.393"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.394" level="INFO">Clicking element 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.394" endtime="20220703 11:25:01.435"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.436" level="INFO">Typing text '!^_!^_' into text field 'id=customer_firstname'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.435" endtime="20220703 11:25:01.480"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:01.367" endtime="20220703 11:25:01.480"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_lastname}</arg>
+<arg>${client_LastName}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:01.481" endtime="20220703 11:25:01.505"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.506" level="INFO">Clicking element 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.505" endtime="20220703 11:25:01.543"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.544" level="INFO">Typing text 'Prince' into text field 'id=customer_lastname'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.543" endtime="20220703 11:25:01.588"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:01.480" endtime="20220703 11:25:01.588"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_email}</arg>
+<arg>${client_Email}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:01.589" endtime="20220703 11:25:01.609"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.609" level="INFO">Clicking element 'id=email'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.609" endtime="20220703 11:25:01.666"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.668" level="INFO">Typing text 'christopherrogers@example.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.667" endtime="20220703 11:25:01.757"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:01.588" endtime="20220703 11:25:01.758"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_password}</arg>
+<arg>${client_Password}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:01.759" endtime="20220703 11:25:01.779"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.780" level="INFO">Clicking element 'xpath=//input[contains(@type,'password')]'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.779" endtime="20220703 11:25:01.820"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.821" level="INFO">Typing text '9000631885' into text field 'xpath=//input[contains(@type,'password')]'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.821" endtime="20220703 11:25:01.869"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:01.758" endtime="20220703 11:25:01.869"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_address_firstname}</arg>
+<arg>${client_FirstName}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:01.870" endtime="20220703 11:25:01.898"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.898" level="INFO">Clicking element 'id=firstname'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.898" endtime="20220703 11:25:01.974"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:01.974" level="INFO">Typing text '!^_!^_' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20220703 11:25:01.974" endtime="20220703 11:25:02.034"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:01.869" endtime="20220703 11:25:02.035"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_address_lastname}</arg>
+<arg>${client_LastName}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:02.036" endtime="20220703 11:25:02.057"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.058" level="INFO">Clicking element 'id=lastname'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.057" endtime="20220703 11:25:02.096"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.097" level="INFO">Typing text 'Prince' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.096" endtime="20220703 11:25:02.156"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:02.035" endtime="20220703 11:25:02.156"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_address}</arg>
+<arg>${client_Address}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:02.156" endtime="20220703 11:25:02.178"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.178" level="INFO">Clicking element 'id=address1'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.178" endtime="20220703 11:25:02.220"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.220" level="INFO">Typing text '691 Jones Streets' into text field 'id=address1'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.220" endtime="20220703 11:25:02.277"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:02.156" endtime="20220703 11:25:02.277"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_city}</arg>
+<arg>${client_City}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:02.279" endtime="20220703 11:25:02.301"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.302" level="INFO">Clicking element 'id=city'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.302" endtime="20220703 11:25:02.342"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.342" level="INFO">Typing text 'West Philip' into text field 'id=city'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.342" endtime="20220703 11:25:02.395"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:02.277" endtime="20220703 11:25:02.395"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${select_state}</arg>
+<arg>${client_State}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220703 11:25:02.396" level="INFO">Selecting options from selection list 'id=id_state' by label Nebraska.</msg>
+<status status="PASS" starttime="20220703 11:25:02.396" endtime="20220703 11:25:02.451"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_zipcode}</arg>
+<arg>${client_postalcode}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:02.452" endtime="20220703 11:25:02.472"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.473" level="INFO">Clicking element 'id=postcode'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.473" endtime="20220703 11:25:02.521"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.522" level="INFO">Typing text '52002' into text field 'id=postcode'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.521" endtime="20220703 11:25:02.571"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:02.451" endtime="20220703 11:25:02.571"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>${select_country}</arg>
+<arg>${client_Country}</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220703 11:25:02.571" level="INFO">Selecting options from selection list 'id=id_country' by label United States.</msg>
+<status status="PASS" starttime="20220703 11:25:02.571" endtime="20220703 11:25:02.602"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_mobilephone}</arg>
+<arg>${client_PhoneNumber}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:02.603" endtime="20220703 11:25:02.622"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.623" level="INFO">Clicking element 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.623" endtime="20220703 11:25:02.668"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.669" level="INFO">Typing text '4079161439' into text field 'id=phone_mobile'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.668" endtime="20220703 11:25:02.714"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:02.602" endtime="20220703 11:25:02.714"/>
+</kw>
+<kw name="Fills field" library="Config">
+<arg>${input_addressalias}</arg>
+<arg>${client_AddressAlias}</arg>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220703 11:25:02.715" endtime="20220703 11:25:02.736"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.736" level="INFO">Clicking element 'id=alias'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.736" endtime="20220703 11:25:02.772"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.773" level="INFO">Typing text '"Dalton's House"' into text field 'id=alias'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.772" endtime="20220703 11:25:02.836"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:02.714" endtime="20220703 11:25:02.837"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220703 11:25:02.838" level="INFO">Clicking element 'id=submitAccount'.</msg>
+<status status="PASS" starttime="20220703 11:25:02.837" endtime="20220703 11:25:04.185"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:59.892" endtime="20220703 11:25:04.186"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:59.887" endtime="20220703 11:25:04.186"/>
+</kw>
+<kw name="Then the registration must not succeed with an invalid message" library="WebTesting_AutomationPractice_Controller">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${firstname_error}</arg>
+<arg>error=Locator ${firstname_error} not found.</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220703 11:25:04.188" endtime="20220703 11:25:04.200"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>-----REGISTRATION DID NOT HAPPEN - FIRST NAME IS INVALID</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220703 11:25:04.200" endtime="20220703 11:25:04.200"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:04.187" endtime="20220703 11:25:04.201"/>
+</kw>
+<kw name="Close Browser with Screenshot" library="Config" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>filename=selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220703 11:25:04.313" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220703 11:25:04.202" endtime="20220703 11:25:04.314"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220703 11:25:04.314" endtime="20220703 11:25:06.526"/>
+</kw>
+<status status="PASS" starttime="20220703 11:25:04.201" endtime="20220703 11:25:06.526"/>
+</kw>
+<status status="PASS" starttime="20220703 11:24:47.100" endtime="20220703 11:25:06.527"/>
+</test>
+<status status="PASS" starttime="20220703 11:24:24.769" endtime="20220703 11:25:06.529"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="WebTesting AutomationPractice">WebTesting AutomationPractice</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Webtesting Automationpractice">Webtesting Automationpractice</stat>
 </suite>
 </statistics>
 <errors>
