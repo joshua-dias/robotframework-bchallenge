@@ -1,7 +1,7 @@
 <b>#🤖 Introdução</b>
-- <b> Repositório criado para inclusão de um desafio de Robot Framework e Gherkin </b>
+- Repositório criado para inclusão de um desafio de Robot Framework e Gherkin
 
-<b>#🤖Primeiro Desafio
+<b>#🤖Primeiro Desafio</b>
 - <b>Scenarios:</b> Tests\WEB\WebTesting_AutomationPractice.robot
 - <b>Controllers:</b> Controllers\WEB\WebTesting_AutomationPractice_Controller.robot
 1. Escolha um site (sim, qualquer um);
